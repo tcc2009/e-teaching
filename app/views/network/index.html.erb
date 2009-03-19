@@ -1,0 +1,7 @@
+<h1>Configuração Atual</h1>
+
+<% @multicast.each_pair do |key, value| %>
+  <p>  <%= "#{key}: #{value}" %> </p>
+<% end %>
+  
+<%= link_to 'Configure', :controller => "network", :action => "edit" %>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<new:HBox xmlns:new="http://www.adobe.com/2006/mxml" >
+
+  	<!-- EFFECT -->
+		<new:Blur id="blurButton"  duration="800" 
+			blurXFrom="0.0" blurXTo="5.0" 
+			blurYFrom="0.0" blurYTo="5.0"
+		/>
+		<new:Blur id="unblurButton"  duration="800"
+			blurXFrom="5.0" blurXTo="0.0" 
+			blurYFrom="5.0" blurYTo="0.0"
+		/>
+		
+  	<!-- SCRIPT -->		
+		<new:Script>
+	  	<![CDATA[
+	  		import mx.controls.Alert;
+	 		  [Embed(source="assets/attention.png")]
+	 		  private var iconAttention:Class;
+	
+			 	private function turn_all_computers_off(event:Event):void{
+			 		Alert.buttonWidth = 120
+	  		  Alert.yesLabel = "Desligar Todos";
+	  		  Alert.noLabel  = "Cancelar"
+
+  			  Alert.show("Tem certeza que deseja desligar todos os computadores?","Todos os alunos terão seus computadores desligados",Alert.YES|Alert.NO, null, null, iconAttention);
+  			  // Set the labels back to normal:
+  			  Alert.yesLabel = "Yes";
+  			  Alert.noLabel = "No";
+  		  }
+  		]]>
+		</new:Script>		
+		
+	<!-- BUTTONS -->
+
+ 		<new:Button 	id="broadcast" 
+			icon="@Embed('assets/blockBroadcast.png')"
+			selectedUpIcon="@Embed('assets/broadcast.png')" 
+	 		toggle="true" 
+	 		selected="false"  
+ 	 		paddingLeft="10" paddingRight="10" 
+ 	 		color="#993300" 
+ 	 		mouseDownEffect="{blurButton}" 
+ 	 		mouseUpEffect="{unblurButton}"
+ 	 		rollOverEffect="{unblurButton}"
+ 	 	/>
+       		 
+	 	<new:Button id="monitoring" 
+	 		icon="@Embed('assets/monitoring.png')" 
+	 		toggle="true" 
+	 		selected="false" 
+     	paddingLeft="10" 
+     	paddingRight="10" 
+     	color="#993300" 
+   		mouseDownEffect="{blurButton}" 
+   		mouseUpEffect="{unblurButton}" 
+ 	 		rollOverEffect="{unblurButton}" 
+   	/>
+            
+	 	<new:Button id="network" 
+	 		icon="@Embed('assets/network.png')"
+			selectedUpIcon="@Embed('assets/blockNetwork.png')" 
+	 		toggle="true" 
+	 		selected="false"  
+   		paddingLeft="10" 
+   		paddingRight="10" 
+   		color="#993300" 
+  		mouseDownEffect="{blurButton}" 
+   		mouseUpEffect="{unblurButton}" 
+ 	 		rollOverEffect="{unblurButton}" 
+   	/>
+			
+ 		<new:Button id="lock" 
+ 			width="100"
+ 			toggle="true" 
+ 			selected="false" 
+ 			icon="@Embed('assets/unlock.png')"
+			selectedUpIcon="@Embed('assets/lock.png')" 
+			paddingLeft="10" 
+ 			paddingRight="10" 
+ 			color="#993300" 
+ 			mouseDownEffect="{blurButton}" 
+ 			mouseUpEffect="{unblurButton}"
+ 	 		rollOverEffect="{unblurButton}" 
+ 		/>
+             
+     <new:Button id="distribute"
+     	width="100" 
+     	icon="@Embed('assets/distribute.png')" 
+      paddingLeft="10" 
+	    paddingRight="10" 
+      color="#993300" 
+     	mouseDownEffect="{blurButton}" 
+     	mouseUpEffect="{unblurButton}" 
+ 	 		rollOverEffect="{unblurButton}" 
+     />
+
+     <new:Button 	id="collect" 
+     	icon="@Embed('assets/collect.png')" 
+     	width="100"
+      paddingLeft="10" 
+      paddingRight="10" 
+      color="#993300" 
+ 	    mouseDownEffect="{blurButton}" 
+ 	    mouseUpEffect="{unblurButton}" 
+ 	 		rollOverEffect="{unblurButton}" 
+ 	   />
+
+      <new:Button id="evaluation" 
+    	icon="@Embed('assets/evaluation.png')"
+    	width="100" 
+     	paddingLeft="10" 
+     	paddingRight="10" 
+     	color="#993300" 
+     	mouseDownEffect="{blurButton}" 
+     	mouseUpEffect="{unblurButton}" 
+ 	 		rollOverEffect="{unblurButton}" 
+     />
+
+		<new:Button id="settings" 
+			icon="@Embed('assets/settings.png')" 
+   		paddingLeft="10" 
+   		paddingRight="10" 
+   		color="#993300" 
+   		mouseDownEffect="{blurButton}" 
+  		mouseUpEffect="{unblurButton}" 
+ 	 		rollOverEffect="{unblurButton}" 
+ 		/>
+
+		<new:Button id="exit" 
+      icon="@Embed('assets/exit.png')" 
+ 	    paddingLeft="10" 
+ 	    paddingRight="10" 
+ 	    color="#993300" 
+ 	    mouseDownEffect="{blurButton}" 
+ 	    mouseUpEffect="{unblurButton}" 
+ 	 		rollOverEffect="{unblurButton}" 
+	    click="turn_all_computers_off(event)"
+    />
+   			
+		<new:Button id="help" 
+			icon="@Embed('assets/help.png')"
+	    paddingLeft="10" 
+ 	    paddingRight="10" 
+ 	    color="#993300" 
+ 	    mouseDownEffect="{blurButton}" 
+ 	    mouseUpEffect="{unblurButton}" 
+ 	 		rollOverEffect="{unblurButton}" 
+ 		/>
+	</new:HBox>

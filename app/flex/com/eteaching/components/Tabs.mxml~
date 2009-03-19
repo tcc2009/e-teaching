@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tab:VBox xmlns:tab="http://www.adobe.com/2006/mxml" width="100%" height="100%">
+<tab:TabNavigator id="tabNav" tabWidth="108" width="100%" height="100%" >
+      <tab:VBox  label="Mostrar Tela" 
+        backgroundAlpha="0.2" 
+        backgroundImage="@Embed('assets/logo.png')" 
+        backgroundColor="black" >
+        <tab:Label text="Compartilhar tela com os alunos" />
+      </tab:VBox>
+
+      <tab:VBox label="Miniaturas" 
+        backgroundAlpha="0.2" 
+        backgroundImage="@Embed('assets/logo.png')" 
+        backgroundColor="black" >
+        <tab:Label text="Altera o modo de visão para Miniatura"/>
+      </tab:VBox>
+      
+      <tab:VBox label="Internet" 
+        backgroundAlpha="0.2" 
+        backgroundImage="@Embed('assets/logo.png')" 
+        backgroundColor="black" >
+        <tab:Label text="BLoqueia e Libera internet"/>
+      </tab:VBox>
+      
+      <tab:VBox label="Travar Alunos" 
+        backgroundAlpha="0.2" 
+        backgroundImage="@Embed('assets/logo.png')" 
+        backgroundColor="black" >
+        <tab:Label text="Trava e Destrava tela"/>
+      </tab:VBox>
+      
+      <tab:VBox label="Enviar Arquivo" 
+        backgroundAlpha="0.2" 
+        backgroundImage="@Embed('assets/logo.png')" 
+        backgroundColor="black" >
+        <tab:Label text="Distribui Arquivos"/>
+      </tab:VBox>
+      
+      <tab:VBox label="Coletar Arquivo" 
+        backgroundAlpha="0.2" 
+        backgroundImage="@Embed('assets/logo.png')" 
+        backgroundColor="black" >
+        <tab:Label text="coleta arquivos"/>
+      </tab:VBox>
+      
+      <tab:VBox label="Enquete" 
+        backgroundAlpha="0.2" 
+        backgroundImage="@Embed('assets/logo.png')" 
+        backgroundColor="black" >
+        <tab:Label text="Faz enquete ou avaliação"/>
+      </tab:VBox>
+      
+      <tab:VBox label="Configurar" 
+        backgroundAlpha="0.2" 
+        backgroundImage="@Embed('assets/logo.png')" 
+        backgroundColor="black" >
+        <tab:Label text="Configurações"/>
+        <tab:Accordion id="accordion" width="100%" height="100%">
+            <!-- Define each panel using a VBox container. -->
+            <tab:VBox label="Dados Servidor">
+                <tab:Label text="Ip do Professor"/>
+                <tab:TextInput id="serverIp"/>
+                <tab:Label text="Escolha opção"/>
+                <tab:TextInput id="another"/>
+            </tab:VBox>
+
+            <tab:VBox label="Outra Configuração">
+                <tab:Label text="Inserir dados para outra Configuração"/>
+            </tab:VBox>
+
+            <tab:VBox label="Configurar outra coisa">
+                <tab:Label text="Bla bla bla ;-)"/>
+            </tab:VBox>
+        </tab:Accordion>
+      </tab:VBox>
+      
+      <tab:VBox label="Desligar Alunos" 
+        backgroundAlpha="0.2" 
+        backgroundImage="@Embed('assets/logo.png')" 
+        backgroundColor="black" >
+        <tab:Label text="Desliga todos os alunos"/>
+      </tab:VBox>
+      
+      <tab:VBox label="Ajuda" 
+        backgroundAlpha="0.2" 
+        backgroundImage="@Embed('assets/logo.png')" 
+        backgroundColor="black" >
+        <tab:Label text="Ajuda"/>
+      </tab:VBox>
+      
+    </tab:TabNavigator>
+</tab:VBox>

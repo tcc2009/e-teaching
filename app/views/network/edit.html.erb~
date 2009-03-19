@@ -1,0 +1,19 @@
+<h1>Configuração da Rede</h1>
+<% #puts @multicast.class %>
+<% form_for @multicast do |f| %>
+  <%# f.error_messages %>
+
+  <p>
+    <%# f.label :IP_Multicast %><br />
+    <%# f.text_field :ip_multicast %>
+  </p>
+  <p>
+    <%# f.label :Porta %><br />
+    <%# f.text_area :port %>
+  </p>
+  <p>
+    <%# f.submit "Aplicar" %>
+  </p>
+<% end %>
+
+<%= link_to 'Voltar', :controller => "network", :action => "index" %>

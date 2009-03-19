@@ -1,0 +1,46 @@
+<mx:Panel id="main" title="E-Teaching"	width="90%" 
+		paddingTop="10" paddingBottom="10" paddingLeft="10" paddingRight="10">
+    <mx:HBox>
+	 		<mx:Button id="broadcast" icon="@Embed('assets/broadcast.png')" toggle="true" selected="false"  
+   		label="Mostrar Tela" paddingLeft="10" paddingRight="10" labelPlacement="bottom" color="#993300" 
+   		mouseDownEffect="{blurButton}" mouseUpEffect="{unblurButton}" rollOverEffect="{unblurButton}"/>
+        		 
+ 		 	<mx:Button id="monitoring" icon="@Embed('assets/monitoring.png')" toggle="true" selected="false"  
+     	label="Modo de Visão" paddingLeft="10" paddingRight="10" labelPlacement="bottom" color="#993300" 
+     	mouseDownEffect="{blurButton}" mouseUpEffect="{unblurButton}" rollOverEffect="{unblurButton}"/>
+            
+ 		 	<mx:Button id="network" icon="@Embed('assets/network.png')" toggle="true" selected="false"  
+     	label="Internet" paddingLeft="10" paddingRight="10" labelPlacement="bottom" color="#993300" 
+     	mouseDownEffect="{blurButton}" mouseUpEffect="{unblurButton}" rollOverEffect="{unblurButton}"/>
+			
+			<!-- LOCK BUTTON -->
+	 		<mx:Button id="lock" toggle="true" selected="false" icon="@Embed('assets/lock.png')"
+			selectedUpIcon="@Embed('assets/unlock.png')" label="(Des)Travar Tela" paddingLeft="10" stickyHighlighting="true" 
+	 		paddingRight="10" labelPlacement="bottom" color="#993300" 
+	 		rollOverEffect="{unblurButton}" mouseDownEffect="{blurButton}" mouseUpEffect="{unblurButton}"/>
+             
+      <mx:Button id="distribute" icon="@Embed('assets/distribute.png')" 
+      label="Distribuir Arquivos" paddingLeft="10" paddingRight="10" labelPlacement="bottom" color="#993300" 
+      mouseDownEffect="{blurButton}" mouseUpEffect="{unblurButton}" rollOverEffect="{unblurButton}"/>
+
+      <mx:Button id="collect" icon="@Embed('assets/collect.png')" 
+      label="Coletar Arquivos" paddingLeft="10" paddingRight="10" labelPlacement="bottom" color="#993300" 
+      mouseDownEffect="{blurButton}" mouseUpEffect="{unblurButton}" rollOverEffect="{unblurButton}"/>
+
+      <mx:Button id="evaluation" icon="@Embed('assets/evaluation.png')" 
+      label="Avaliação ou Enquete" paddingLeft="10" paddingRight="10" labelPlacement="bottom" color="#993300" 
+      mouseDownEffect="{blurButton}" mouseUpEffect="{unblurButton}" rollOverEffect="{unblurButton}"/>
+
+			<mx:Button id="settings" icon="@Embed('assets/settings.png')" toggle="true" selected="false"  
+   		label="Configurações" paddingLeft="10" paddingRight="10" labelPlacement="bottom" color="#993300" 
+   		mouseDownEffect="{blurButton}" mouseUpEffect="{unblurButton}" rollOverEffect="{unblurButton}"/>
+
+      <mx:Button id="exit" icon="@Embed('assets/exit.png')" 
+      label="Desligar todos" paddingLeft="10" paddingRight="10" labelPlacement="bottom" color="#993300" 
+      mouseDownEffect="{blurButton}" mouseUpEffect="{unblurButton}" rollOverEffect="{unblurButton}"/>
+   			
+			<mx:Button id="help" icon="@Embed('assets/help.png')" 
+      label="Ajuda" paddingLeft="10" paddingRight="10" labelPlacement="bottom" color="#993300" 
+      mouseDownEffect="{blurButton}" mouseUpEffect="{unblurButton}" rollOverEffect="{unblurButton}"/>
+	  </mx:HBox>
+	</mx:Panel>
