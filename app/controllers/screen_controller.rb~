@@ -1,19 +1,26 @@
 class ScreenController < ApplicationController
+
   def index
-    if @teachers_screen == true
-      state = "Tela Compartilhada"
+		puts "estou aqui e $teachers_screen = #{$teachers_screen} e sua classe é #{$teachers_screen.class}"
+    if $teachers_screen == true
+      @state = "Tela Compartilhada"
     else
-      state = "Tela não Compartilhada"
+      @state = "Tela não Compartilhada"
     end  
   end
   
   def share
-    @teachers_screen.share = true
-    redirect_to :action => "index"
+    @socket.send('yes', 0, @@multicast_addr, @@port) 
+    @socket.close
+    $teachers_screen = true
+		puts "aqui embaixo $teachers_screen = #{$teachers_screen} e sua classe é #{$teachers_screen.class}"		
+    redirect_to :action => "index" 
   end
   
   def dont_share
-    @teachers_screen.share = false
+    @socket.send('no', 0, @@multicast_addr, @@port) 
+    @socket.close
+    $teachers_screen = false
     redirect_to :action => "index"
   end
   
